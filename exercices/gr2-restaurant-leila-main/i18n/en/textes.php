@@ -24,7 +24,7 @@ $meta = [
                 ]
 ];
 
-$blockquoteTitle = "Click here for a new quote";
+$blockquoteTitle = "Click for new quote.";
 
 /********** ENTÊTE ********************/
 $entNomSite = "LEILA";

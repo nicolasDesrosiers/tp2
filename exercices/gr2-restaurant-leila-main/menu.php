@@ -4,15 +4,17 @@
   include('inclusions/entete.inc.php');
 
   // Gestion de la citation aléatoire
-  $citation = obtenirCitationAleatoire($page);
+  $citation = obtenirCitationAleatoire($page, $lan);
 ?>
 <div class="contenu-principal">
       <div class="citation">
         <img src="images/menu-citation.jpg" alt="">
-        <blockquote page="<?= $page ?>" langue="<?= $lan ?>" title="<?= $blockquoteTitle?>">
-         <span class="citation-texte"><?= $citation['texte']; ?></span>
+        
+        <blockquote date-page="<?= $page ?>" date-langue="<?= $lan ?>"  title="<?= $blockquoteTitle; ?>">
+          <span class="citation-texte"><?= $citation['texte']; ?></span>
           <cite>- <span class="citation-auteur"><?= $citation['auteur']; ?></span></cite>
         </blockquote>
+        
       </div>
       <div class="carte">
         <section>
